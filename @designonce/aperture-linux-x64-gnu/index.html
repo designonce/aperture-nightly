@@ -1,8 +1,8 @@
 {
   "name": "@designonce/aperture-linux-x64-gnu",
   "dist-tags": {
-    "latest": "0.2.0-rc.1",
-    "next": "0.2.0-rc.1"
+    "latest": "0.2.0-rc.2",
+    "next": "0.2.0-rc.2"
   },
   "versions": {
     "0.2.0-rc.1": {
@@ -35,7 +35,38 @@
         "shasum": "a10a5177617455293dd2db528779c3a46f3c7ee1",
         "integrity": "sha512-KrcYXn9KM+Zv2oxuj5jOQQst1W27/CKSTsLeTw6Gmdoaev2Sc1qH5GYPoJKxcgbtIY6PFBWv37aVb1sW92EBfA=="
       }
+    },
+    "0.2.0-rc.2": {
+      "name": "@designonce/aperture-linux-x64-gnu",
+      "version": "0.2.0-rc.2",
+      "description": "Aperture native binary for Linux x64 glibc",
+      "exports": {
+        "./bin/aperture": "./bin/aperture",
+        "./package.json": "./package.json"
+      },
+      "files": [
+        "bin/aperture",
+        "package.json",
+        "README.md",
+        "LICENSE"
+      ],
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "libc": [
+        "glibc"
+      ],
+      "preferUnplugged": true,
+      "license": "SEE LICENSE IN LICENSE",
+      "dist": {
+        "tarball": "https://github.com/designonce/aperture-nightly/releases/download/aperture-v0.2.0-rc.2/designonce-aperture-linux-x64-gnu-0.2.0-rc.2.tgz",
+        "shasum": "9c645989069f18e20b3ec1e284b502d5d23494a2",
+        "integrity": "sha512-nejdbLRW2bFPjD+YjgmrC6I6fK8emSAuEF7A8R+R3UE/2EKd4XktfX3SAPdtUCBu/W0k0mBrejtjuAeCxyOc7Q=="
+      }
     }
   },
-  "modified": "2026-10-07T03:37:32.212Z"
+  "modified": "2026-10-07T06:42:58.627Z"
 }

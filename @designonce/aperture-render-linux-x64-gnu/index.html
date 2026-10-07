@@ -1,8 +1,8 @@
 {
   "name": "@designonce/aperture-render-linux-x64-gnu",
   "dist-tags": {
-    "latest": "0.2.0-rc.1",
-    "next": "0.2.0-rc.1"
+    "latest": "0.2.0-rc.2",
+    "next": "0.2.0-rc.2"
   },
   "versions": {
     "0.2.0-rc.1": {
@@ -36,7 +36,39 @@
         "shasum": "b8757f9f22a90e0822096683ac6fd044c773dd1c",
         "integrity": "sha512-OlCfG0/srdVWMTp3q8mMss6+6itOud8d2pDGouYX9tJzWF0FTPU02yV8GZZxhgIaRIDr1AzkxoD7GSpER8pccw=="
       }
+    },
+    "0.2.0-rc.2": {
+      "name": "@designonce/aperture-render-linux-x64-gnu",
+      "version": "0.2.0-rc.2",
+      "description": "Aperture software Vulkan render stack for Linux x64 glibc",
+      "exports": {
+        "./icd/lvp_icd.x86_64.json": "./share/vulkan/icd.d/lvp_icd.x86_64.json",
+        "./package.json": "./package.json"
+      },
+      "files": [
+        "lib/",
+        "share/vulkan/icd.d/lvp_icd.x86_64.json",
+        "package.json",
+        "README.md",
+        "LICENSE"
+      ],
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "libc": [
+        "glibc"
+      ],
+      "preferUnplugged": true,
+      "license": "SEE LICENSE IN LICENSE",
+      "dist": {
+        "tarball": "https://github.com/designonce/aperture-nightly/releases/download/aperture-v0.2.0-rc.2/designonce-aperture-render-linux-x64-gnu-0.2.0-rc.2.tgz",
+        "shasum": "9aa21fc806682a43d40bb70849cb976663d3c76d",
+        "integrity": "sha512-CFcTImBxywqjFU0hiiS3X3NSglZzOJxsMlm9lJTmlPu6v9mZ/v+REwt2coLDrH93UNjbbUWg72jlqd2TQexEug=="
+      }
     }
   },
-  "modified": "2026-10-07T03:37:34.351Z"
+  "modified": "2026-10-07T06:43:00.028Z"
 }
