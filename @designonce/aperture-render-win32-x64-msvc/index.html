@@ -1,8 +1,8 @@
 {
   "name": "@designonce/aperture-render-win32-x64-msvc",
   "dist-tags": {
-    "latest": "0.2.0-rc.2",
-    "next": "0.2.0-rc.2"
+    "latest": "0.2.0-rc.3",
+    "next": "0.2.0-rc.3"
   },
   "versions": {
     "0.2.0-rc.2": {
@@ -33,7 +33,36 @@
         "shasum": "d23c91c1e345fb2016781038f7be7399aa21aef5",
         "integrity": "sha512-aLPsbr9kEClAfBaJiSnlem5tayO5NXE+iwT5FUdjGZ1egmZeE63Xw5YRLn1ahxLDYTWEPzZvRg/wsf4QU8TfxA=="
       }
+    },
+    "0.2.0-rc.3": {
+      "name": "@designonce/aperture-render-win32-x64-msvc",
+      "version": "0.2.0-rc.3",
+      "description": "Aperture software Vulkan render stack for Windows x64",
+      "exports": {
+        "./icd/lvp_icd.x86_64.json": "./bin/lvp_icd.x86_64.json",
+        "./package.json": "./package.json"
+      },
+      "files": [
+        "bin/",
+        "licenses/",
+        "package.json",
+        "README.md",
+        "LICENSE"
+      ],
+      "os": [
+        "win32"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "preferUnplugged": true,
+      "license": "SEE LICENSE IN LICENSE",
+      "dist": {
+        "tarball": "https://github.com/designonce/aperture-nightly/releases/download/aperture-v0.2.0-rc.3/designonce-aperture-render-win32-x64-msvc-0.2.0-rc.3.tgz",
+        "shasum": "8e94e7abcd48b1dfe2d2bd393b9410ecad53a401",
+        "integrity": "sha512-5B4PembxgfeWR9T5W9adL6H+lA5hjRh6xO5sCHET88hGq53xZG/lN6HpJc6DiqH2pesRCJolGrAz5u7N/T6onQ=="
+      }
     }
   },
-  "modified": "2026-10-07T06:43:00.532Z"
+  "modified": "2026-10-08T02:17:03.898Z"
 }

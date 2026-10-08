@@ -1,8 +1,8 @@
 {
   "name": "@designonce/aperture",
   "dist-tags": {
-    "latest": "0.2.0-rc.2",
-    "next": "0.2.0-rc.2"
+    "latest": "0.2.0-rc.3",
+    "next": "0.2.0-rc.3"
   },
   "versions": {
     "0.2.0-rc.1": {
@@ -97,7 +97,62 @@
         "shasum": "89ebcf8a4df40e5b29625a5573acd06897be2743",
         "integrity": "sha512-4PsjYXdABHBUGDy371LPCdLhezPIypCk/MjtdwvTJgWOuPQ2jzD5+t+i4OHc4tS4FxM6StjRJTmy0yjoeEWgiA=="
       }
+    },
+    "0.2.0-rc.3": {
+      "name": "@designonce/aperture",
+      "version": "0.2.0-rc.3",
+      "description": "Headless CAD renderer for agents: screenshot a STEP file, list its geometry, and measure surfaces, bodies and distances",
+      "type": "module",
+      "bin": {
+        "aperture": "./bin/aperture.mjs"
+      },
+      "exports": {
+        ".": {
+          "types": "./lib/index.d.ts",
+          "import": "./lib/index.js"
+        },
+        "./agent-screenshot-catalogue.json": "./lib/agent-screenshot-catalogue.json",
+        "./aperture-support.json": "./lib/aperture-support.json",
+        "./package.json": "./package.json"
+      },
+      "files": [
+        "bin/",
+        "lib/",
+        "README.md",
+        "PROTOCOL.md",
+        "LICENSE"
+      ],
+      "optionalDependencies": {
+        "@designonce/aperture-linux-x64-gnu": "0.2.0-rc.3",
+        "@designonce/aperture-render-linux-x64-gnu": "0.2.0-rc.3",
+        "@designonce/aperture-win32-x64-msvc": "0.2.0-rc.3",
+        "@designonce/aperture-render-win32-x64-msvc": "0.2.0-rc.3"
+      },
+      "engines": {
+        "node": ">=20"
+      },
+      "license": "SEE LICENSE IN LICENSE",
+      "keywords": [
+        "cad",
+        "step",
+        "step-file",
+        "measure",
+        "measurement",
+        "geometry",
+        "metrology",
+        "brep",
+        "screenshot",
+        "render",
+        "headless",
+        "agent",
+        "llm"
+      ],
+      "dist": {
+        "tarball": "https://github.com/designonce/aperture-nightly/releases/download/aperture-v0.2.0-rc.3/designonce-aperture-0.2.0-rc.3.tgz",
+        "shasum": "d868898c02dfb37f6cdd7a3699bf1979cb9fcd3b",
+        "integrity": "sha512-7p8rOUKgkJDSoQD7j6FO3S37P+YdEH78OWvQQsZodNxnAvPf272pBJXZ4il/MTSuo6WqEpkZpjzGSwR92LpB/w=="
+      }
     }
   },
-  "modified": "2026-10-07T06:42:57.093Z"
+  "modified": "2026-10-08T02:17:00.386Z"
 }
